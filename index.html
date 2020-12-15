@@ -57,7 +57,16 @@
         <section class="hero">
             <div class="overlay">
             <h1 class="main-title">эффективные решения<br> для вашего бизнеса</h1>
-            <button class="main-btn"  type="button">Заказать услугу</button>
+            <button data-modal-open class="main-btn"  type="button">Заказать услугу</button>
+            <div class="backdrop is-hidden" data-modal>
+                <div class="modal">
+                  <button  class="close-btn" type="button" data-modal-close>
+                    <svg class="icon-close" >
+                      <use href="./images/symbol-defs.svg#icon-Vector"></use>
+                    </svg> 
+                  </button>
+                </div>
+              </div>
        </div>
         </section>
         <!-- Особенности-->
@@ -90,11 +99,23 @@
             <h2 class="about-title">Чем мы занимаемся</h2>
          <div class="container">
             <ul class="about-list">
-            <li class="item"> <img  class="about-list-img"   src="./images/img.jpg" alt="человек печатает" width="370">
+            <li class="item">
+                 <img  class="about-list-img"   src="./images/img.jpg" alt="человек печатает" width="370">
+                 <div class="feature">
+                     <p class="feature-title">Десктопные приложения</p>
+                 </div>
             </li>
-            <li class="item"> <img  class="about-list-img"   src="./images/box-2.jpg" alt="человек держит телефон" width="370">
+            <li class="item"> 
+                <img  class="about-list-img"   src="./images/box-2.jpg" alt="человек держит телефон" width="370">
+                <div class="feature">
+                    <p class="feature-title">Мобильные приложения</p>
+                </div>
             </li>
-            <li class="item"> <img  class="about-list-img"   src="./images/box-3.jpg" alt="планшет" width="370">
+            <li class="item"> 
+                <img  class="about-list-img"   src="./images/box-3.jpg" alt="планшет" width="370">
+                <div class="feature">
+                    <p class="feature-title">Дизайнерские решения</p>
+                </div>
             </li>
         </ul>
         </div>
@@ -175,7 +196,7 @@
                     </li>
                 </ul>
                 </li>
-             </li>
+             
                  
              <li class="team-list-item"> 
                 <img  class="team-list-img" src="./images/img-2.jpg" alt="фото Николай Тарасова" width="270">
@@ -347,5 +368,6 @@
     </div>
     </div>
   </footer> 
+  <script src="./js/modal.js"></script>
 </body>
 </html>
